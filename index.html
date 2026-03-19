@@ -337,17 +337,12 @@ nav {
   margin-bottom: clamp(var(--sp-3), 3vh, var(--sp-4));
 }
 
-/* Desc + buttons share width */
+/* Desc drives width, buttons fill it */
 .hero-copy-group {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: fit-content;
-  max-width: 100%;
-}
-.hero-copy-group .hero-desc {
-  max-width: 100%;
-  width: 100%;
+  max-width: 38ch;
 }
 
 /* Buttons */
