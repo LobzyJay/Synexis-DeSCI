@@ -218,7 +218,6 @@ nav {
   transform: translate(-50%, -50%);
   background: radial-gradient(circle, rgba(245,166,35,0.22) 0%, rgba(245,120,20,0.08) 40%, transparent 70%);
   filter: blur(18px);
-  animation: orbPulse1 4.2s ease-in-out infinite;
 }
 
 /* Helix right — amber streak along right helix column */
@@ -230,7 +229,6 @@ nav {
   border-radius: 40%;
   background: radial-gradient(ellipse, rgba(245,166,35,0.15) 0%, transparent 65%);
   filter: blur(14px);
-  animation: orbPulse2 5.8s ease-in-out infinite;
 }
 
 /* Helix left — softer, cooler tint on left helix */
@@ -242,7 +240,6 @@ nav {
   border-radius: 40%;
   background: radial-gradient(ellipse, rgba(220,150,40,0.12) 0%, transparent 65%);
   filter: blur(14px);
-  animation: orbPulse2 5.8s ease-in-out 1.4s infinite;
 }
 
 /* Smaller energy ball — mid right */
@@ -253,18 +250,8 @@ nav {
   transform: translate(-50%, -50%);
   background: radial-gradient(circle, rgba(245,166,35,0.18) 0%, transparent 65%);
   filter: blur(12px);
-  animation: orbPulse1 3.6s ease-in-out 0.8s infinite;
 }
 
-@keyframes orbPulse1 {
-  0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(1);    }
-  50%       { opacity: 1;    transform: translate(-50%, -50%) scale(1.12); }
-}
-@keyframes orbPulse2 {
-  0%, 100% { opacity: 0.4;  transform: translate(-50%, -50%) scale(1);    }
-  40%       { opacity: 0.85; transform: translate(-50%, -50%) scale(1.08); }
-  70%       { opacity: 0.55; transform: translate(-50%, -50%) scale(0.96); }
-}
 
 /* Progressive edge blur — bottom + sides */
 .hero-edge-blur {
